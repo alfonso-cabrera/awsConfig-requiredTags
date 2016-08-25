@@ -36,7 +36,7 @@ func main() {
 			},
 			ConfigRuleName:            aws.String("required-tags"),
 			InputParameters:           aws.String("{\"tag1Key\":\"Environment\",\"tag2Key\":\"Project\",\"tag3Key\":\"AlertGroup\"}"),
-			Description:               aws.String("Check for compliance with AWS tagging structure. Checks EC2, RDS and ALBs"),
+			Description:               aws.String("Check for compliance with AWS tagging structure. Checks EC2 & RDS"),
 			Scope: &configservice.Scope{
 					ComplianceResourceTypes: []*string{
 							aws.String("AWS::RDS::DBInstance"),
